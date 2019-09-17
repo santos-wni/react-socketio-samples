@@ -1,4 +1,4 @@
-const nc = require("./notif-client");
+const nc = require("WRAP-NOTIF");
 
 const url = 'http://localhost:8000';
 const path = '';
