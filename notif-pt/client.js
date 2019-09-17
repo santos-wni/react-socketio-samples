@@ -4,7 +4,8 @@ const url = 'http://localhost:8000';
 const path = '';
 const functions = {
   "message" : (message) => {
-    console.log(`Message: ${message}`);
+    console.log(`Message: ${message.msg.t}`);
+    process.exit(0);
   },
   "connect" : () => {
     console.log('Connected');
