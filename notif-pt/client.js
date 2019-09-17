@@ -4,11 +4,16 @@ const url = 'http://localhost:8000';
 const path = '';
 const functions = {
   "message" : (message) => {
-    console.log(`Message: ${message.msg.t}`);
+    let receiveTime = (new Date).getTime() / 1000;
+    let sendTime = message.msg.data.time;
+    let latency = receiveTime - sendTime;
+    console.log(`${receiveTime}, Message, ${sendTime}, ${latency}`);
+    console.log(`Latency: ${latency.toFixed(2)}`);
     process.exit(0);
   },
   "connect" : () => {
-    console.log('Connected');
+    let receiveTime = (new Date).getTime() / 1000;
+    console.log(`${receiveTime}, Connected`);
   },
   "disconnect" : () => {
     console.log('Disconnected');
