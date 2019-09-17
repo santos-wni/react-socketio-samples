@@ -20,7 +20,7 @@ message={
         "mode": modes[1],
         "t": dt.strftime('%Y-%m-%dT%H:%M:%SZ'),
         "data": {
-            "time": time.time(),
+            "sendTime": time.time(),
             "OriginTime": dt.strftime('%Y-%m-%dT%H:%M:%SZ'),
             "ArrivalTime": dt.strftime('%Y-%m-%dT%H:%M:%SZ'),
             "AreaName": "幕張テクノガーデン付近",

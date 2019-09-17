@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CLIENT_COUNT=3
+CLIENT_COUNT=100
 LOGDIR="./log"
 test -d $LOGDIR && rm -r $LOGDIR
 test -d $LOGDIR || mkdir $LOGDIR
